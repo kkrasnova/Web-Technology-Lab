@@ -1,0 +1,60 @@
+.chart-container {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 330px; /* Збільшено максимальну ширину контейнера */
+}
+
+.bar {
+  transition: fill 0.3s ease;
+}
+
+.bar:hover {
+  fill: #ff7f0e;
+}
+
+.value-label {
+  font-weight: bold;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 8px;
+  font: 12px sans-serif;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+.chart-legend {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.legend-item {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.color-box {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
