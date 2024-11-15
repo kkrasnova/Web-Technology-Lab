@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Price Monitor</h1>
+        
+        <div class="connection-types">
+            <button onclick="startWebSocket()">WebSocket</button>
+            <button onclick="startLongPoll()">Long Polling</button>
+            <button onclick="startRegularPoll()">Regular Polling</button>
+            <button onclick="startGraphQLPoll()">GraphQL</button>
+            <button onclick="stopAll()">Stop All</button>
+        </div>
+
+        <div class="price-displays">
+            <div class="price-card" id="websocket">
+                <h2>WebSocket</h2>
+                <p>Bitcoin: <span class="btc">-</span></p>
+                <p>Ethereum: <span class="eth">-</span></p>
+                <p class="timestamp">Last update: -</p>
+            </div>
+
+            <div class="price-card" id="longpoll">
+                <h2>Long Polling</h2>
+                <p>Bitcoin: <span class="btc">-</span></p>
+                <p>Ethereum: <span class="eth">-</span></p>
+                <p class="timestamp">Last update: -</p>
+            </div>
+
+            <div class="price-card" id="regularpoll">
+                <h2>Regular Polling</h2>
+                <p>Bitcoin: <span class="btc">-</span></p>
+                <p>Ethereum: <span class="eth">-</span></p>
+                <p class="timestamp">Last update: -</p>
+            </div>
+
+            <div class="price-card" id="graphql">
+                <h2>GraphQL</h2>
+                <p>Bitcoin: <span class="btc">-</span></p>
+                <p>Ethereum: <span class="eth">-</span></p>
+                <p class="timestamp">Last update: -</p>
+            </div>
+        </div>
+
+        <div class="statistics">
+            <h2>Performance Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Network Usage</h3>
+                    <div id="networkStats">
+                        <p>WebSocket: <span id="ws-bytes">0</span> bytes</p>
+                        <p>Long Polling: <span id="lp-bytes">0</span> bytes</p>
+                        <p>Regular Polling: <span id="rp-bytes">0</span> bytes</p>
+                        <p>GraphQL: <span id="graphql-bytes">0</span> bytes</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <h3>Response Times</h3>
+                    <div id="responseStats">
+                        <p>WebSocket: <span id="ws-time">0</span> ms</p>
+                        <p>Long Polling: <span id="lp-time">0</span> ms</p>
+                        <p>Regular Polling: <span id="rp-time">0</span> ms</p>
+                        <p>GraphQL: <span id="graphql-time">0</span> ms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

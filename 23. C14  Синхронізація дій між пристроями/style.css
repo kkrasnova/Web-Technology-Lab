@@ -1,0 +1,213 @@
+/* Загальні стилі для body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Стилі для основного контейнера */
+.container {
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+/* Стилі для заголовка */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Стилі для контейнера вводу */
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Стилі для поля вводу */
+input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+/* Загальні стилі для кнопок */
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Ефект наведення для кнопок */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Стилі для списку завдань */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Стилі для елементів списку */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Ефект наведення для елементів списку */
+li:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Стилі для кнопок видалення та завершення */
+.delete-btn, .complete-btn {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Ефект наведення для кнопки видалення */
+.delete-btn:hover {
+    color: #f44336;
+}
+
+/* Ефект наведення для кнопки завершення */
+.complete-btn:hover {
+    color: #4CAF50;
+}
+
+/* Стилі для завершених завдань */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Стилі для контейнера фільтрів */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Стилі для кнопок фільтрів */
+.filter-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Стилі для активної кнопки фільтра */
+.filter-btn.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Стилі для контейнера очищення */
+.clear-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Стилі для кнопки очищення завершених завдань */
+#clear-completed-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Ефект наведення для кнопки очищення */
+#clear-completed-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Стилі для тексту завдання */
+.todo-text {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+/* Анімація появи нового завдання */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Застосування анімації до елементів списку */
+li {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Анімація для нового завдання */
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.new-todo-animation {
+    animation: slideDown 0.5s ease-out;
+}
+
+/* Анімація для завершення завдання */
+@keyframes completeTask {
+    from { background-color: #f9f9f9; }
+    to { background-color: #e6ffe6; }
+}
+
+.complete-animation {
+    animation: completeTask 0.5s ease-out;
+}
+
+/* Анімація для скасування завершення завдання */
+@keyframes uncompleteTask {
+    from { background-color: #e6ffe6; }
+    to { background-color: #f9f9f9; }
+}
+
+.uncomplete-animation {
+    animation: uncompleteTask 0.5s ease-out;
+}
+
+/* Анімація для видалення завдання */
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(20px); }
+}
+
+.delete-animation {
+    animation: fadeOut 0.5s ease-out;
+}

@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "17.-b4",
+=======
+  "name": "19.-c11",
+>>>>>>> 39a084e4544eba1197c5da0bb2c7b8b0807d6517
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,8 +14,18 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+<<<<<<< HEAD
     "@elastic/elasticsearch": "^8.16.0",
     "elasticsearch": "^16.7.3",
     "express": "^4.21.1"
+=======
+    "@graphql-tools/schema": "^10.0.8",
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.9.0",
+    "ws": "^8.18.0"
+>>>>>>> 39a084e4544eba1197c5da0bb2c7b8b0807d6517
   }
 }
