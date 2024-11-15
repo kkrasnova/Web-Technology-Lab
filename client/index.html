@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Price Monitor</h1>
+        
+        <div class="connection-types">
+            <button onclick="startWebSocket()">WebSocket</button>
+            <button onclick="startLongPoll()">Long Polling</button>
+            <button onclick="startRegularPoll()">Regular Polling</button>
+            <button onclick="stopAll()">Stop All</button>
+        </div>
+
+        <div class="price-displays">
+            <div class="price-card" id="websocket">
+                <h2>WebSocket</h2>
+                <p>Bitcoin: <span class="btc">-</span></p>
+                <p>Ethereum: <span class="eth">-</span></p>
+                <p class="timestamp">Last update: -</p>
+            </div>
+
+            <div class="price-card" id="longpoll">
+                <h2>Long Polling</h2>
+                <p>Bitcoin: <span class="btc">-</span></p>
+                <p>Ethereum: <span class="eth">-</span></p>
+                <p class="timestamp">Last update: -</p>
+            </div>
+
+            <div class="price-card" id="regularpoll">
+                <h2>Regular Polling</h2>
+                <p>Bitcoin: <span class="btc">-</span></p>
+                <p>Ethereum: <span class="eth">-</span></p>
+                <p class="timestamp">Last update: -</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
