@@ -1,0 +1,7 @@
+C:\Users\krasn\OneDrive\Рабочий стол\Web-Technology-Lab\35. QA4\SecurityLeakDemo\obj\Debug\net7.0\SecurityLeakDemo.csproj.AssemblyReference.cache
+C:\Users\krasn\OneDrive\Рабочий стол\Web-Technology-Lab\35. QA4\SecurityLeakDemo\obj\Debug\net7.0\SecurityLeakDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\krasn\OneDrive\Рабочий стол\Web-Technology-Lab\35. QA4\SecurityLeakDemo\obj\Debug\net7.0\SecurityLeakDemo.AssemblyInfoInputs.cache
+C:\Users\krasn\OneDrive\Рабочий стол\Web-Technology-Lab\35. QA4\SecurityLeakDemo\obj\Debug\net7.0\SecurityLeakDemo.AssemblyInfo.cs
+C:\Users\krasn\OneDrive\Рабочий стол\Web-Technology-Lab\35. QA4\SecurityLeakDemo\obj\Debug\net7.0\SecurityLeakDemo.csproj.CoreCompileInputs.cache
+C:\Users\krasn\OneDrive\Рабочий стол\Web-Technology-Lab\35. QA4\SecurityLeakDemo\obj\Debug\net7.0\SecurityLeakDemo.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\krasn\OneDrive\Рабочий стол\Web-Technology-Lab\35. QA4\SecurityLeakDemo\obj\Debug\net7.0\SecurityLeakDemo.MvcApplicationPartsAssemblyInfo.cache

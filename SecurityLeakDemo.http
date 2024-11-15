@@ -1,0 +1,6 @@
+@SecurityLeakDemo_HostAddress = http://localhost:5187
+
+GET {{SecurityLeakDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
