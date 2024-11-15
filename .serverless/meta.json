@@ -1,0 +1,127 @@
+{
+  "C:\\Users\\krasn\\OneDrive\\Рабочий стол\\Web-Technology-Lab\\31. B7\\aws-lambda-api": {
+    "versionSfCore": null,
+    "versionFramework": "4.4.9",
+    "isWithinCompose": false,
+    "isCompose": false,
+    "composeOrgName": null,
+    "composeResolverProviders": {
+      "default-aws-credential-resolver": "<REDACTED>",
+      "sls": {
+        "instance": {
+          "credentials": "<REDACTED>",
+          "serviceConfigFile": {
+            "service": "api-service",
+            "frameworkVersion": "3",
+            "provider": {
+              "name": "aws",
+              "runtime": "nodejs18.x",
+              "region": "eu-central-1",
+              "stage": "dev"
+            },
+            "plugins": [
+              "serverless-offline"
+            ],
+            "functions": {
+              "hello": {
+                "handler": "handler.hello",
+                "events": [
+                  {
+                    "http": {
+                      "path": "/hello",
+                      "method": "get"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "configFileDirPath": "C:\\Users\\krasn\\OneDrive\\Рабочий стол\\Web-Technology-Lab\\31. B7\\aws-lambda-api",
+          "config": {
+            "type": "sls"
+          },
+          "options": {},
+          "stage": "dev",
+          "dashboard": null,
+          "logger": {
+            "namespace": "s:core:resolver:sls",
+            "prefix": null,
+            "prefixColor": null
+          },
+          "_credentialsPromise": "<REDACTED>"
+        },
+        "resolvers": {}
+      }
+    },
+    "composeServiceName": null,
+    "servicePath": "C:\\Users\\krasn\\OneDrive\\Рабочий стол\\Web-Technology-Lab\\31. B7\\aws-lambda-api",
+    "serviceConfigFileName": "serverless.yml",
+    "service": {
+      "service": "api-service",
+      "frameworkVersion": "3",
+      "provider": {
+        "name": "aws",
+        "runtime": "nodejs18.x",
+        "region": "eu-central-1",
+        "stage": "dev"
+      },
+      "plugins": [
+        "serverless-offline"
+      ],
+      "functions": {
+        "hello": {
+          "handler": "handler.hello",
+          "events": [
+            {
+              "http": {
+                "path": "/hello",
+                "method": "get"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "serviceRawFile": "service: api-service\r\n\r\nframeworkVersion: '3'\r\n\r\nprovider:\r\n  name: aws\r\n  runtime: nodejs18.x\r\n  region: eu-central-1\r\n  stage: dev\r\n\r\nplugins:\r\n  - serverless-offline\r\n\r\nfunctions:\r\n  hello:\r\n    handler: handler.hello\r\n    events:\r\n      - http:\r\n          path: /hello\r\n          method: get",
+    "command": [
+      "offline"
+    ],
+    "options": {},
+    "error": {
+      "message": "The Serverless version (4.4.9) does not satisfy the \"frameworkVersion\" (3) in serverless.yml",
+      "stack": "ServerlessError2: The Serverless version (4.4.9) does not satisfy the \"frameworkVersion\" (3) in serverless.yml\n    at Service.loadServiceFileParam (file:///C:/Users/krasn/.serverless/releases/4.4.9/package/dist/sf-core.js:926:9328)\n    at Service.load (file:///C:/Users/krasn/.serverless/releases/4.4.9/package/dist/sf-core.js:926:6970)\n    at Serverless.init (file:///C:/Users/krasn/.serverless/releases/4.4.9/package/dist/sf-core.js:932:10015)\n    at runFramework (file:///C:/Users/krasn/.serverless/releases/4.4.9/package/dist/sf-core.js:980:1404)\n    at async route (file:///C:/Users/krasn/.serverless/releases/4.4.9/package/dist/sf-core.js:1010:14784)\n    at async Object.run2 [as run] (file:///C:/Users/krasn/.serverless/releases/4.4.9/package/dist/sf-core.js:1010:15182)\n    at async run3 (file:///C:/Users/krasn/.serverless/releases/4.4.9/package/dist/sf-core.js:1010:16442)",
+      "code": "FRAMEWORK_VERSION_MISMATCH"
+    },
+    "params": {},
+    "machineId": "6fe67e896f7a723ba1f5bea337c77ee9",
+    "stage": "dev",
+    "accessKeyV2": "<REDACTED>",
+    "accessKeyV1": "<REDACTED>",
+    "orgId": "d880053b-80df-44be-9d4b-613fb88fdb49",
+    "orgName": "anastasiiakrasnova",
+    "userId": "ytwYR2rgV2bDvD5ZcH",
+    "dashboard": {
+      "isEnabledForService": false,
+      "requiredAuthentication": false,
+      "orgFeaturesInUse": null,
+      "orgObservabilityIntegrations": null,
+      "serviceAppId": null,
+      "serviceProvider": null,
+      "instanceParameters": null
+    },
+    "userName": "anastasiiakrasnova",
+    "subscription": null,
+    "userEmail": "krasnovaanastasia133@gmail.com",
+    "serviceProviderAwsRegion": "eu-central-1",
+    "serviceProviderAwsCredentials": "<REDACTED>",
+    "serviceProviderAwsAccountId": "565393071727",
+    "projectType": "traditional",
+    "versionSf": "4.4.9",
+    "serviceUniqueId": null,
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  }
+}

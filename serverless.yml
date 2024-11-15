@@ -1,0 +1,26 @@
+service: api-service
+
+frameworkVersion: '4'  # Изменили с '3' на '4'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: eu-central-1
+  stage: dev
+
+plugins:
+  - serverless-offline
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: /hello
+          method: get
+  getUser:
+    handler: handler.getUser
+    events:
+      - http:
+          path: /user/{id}
+          method: get
